@@ -6,4 +6,4 @@ class Car(Vehicle):
         self.seating_capacity = seating_capacity
 
     def display_info(self):
-        return f"Car: {self.brand} {self.model}, Year: {self.year}, Seats: {self.seating_capacity}, Rental Price: ${self.__rental_price_per_day}/day"
+        return f"Car: {self.brand} {self.model}, Year: {self.year}, Seats: {self.seating_capacity}, Rental Price: ${self.get_rental_price_per_day()}/day"
